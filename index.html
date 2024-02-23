@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>WemyGastrô</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--framework BOOTSTRAP CSS-->
+        <link href="lib/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+<!--CABEÇALHO E BARRA DE NAVEGAÇÃO-->        
+        <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+            <div class="container">
+                <h1 class="navbar-brand m-0 section-tittle">WemyGastrô - A Alegria da Capital</h1>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                    <ul class="nav nav-pills d-block d-md-flex">
+                        <li class="nav-item fw-bold" >
+                            <a href="#sobre-o-restaurante" class="nav-link">
+                                <i class="bi bi-house-door me-1"></i>
+                                Sobre o restaurante
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#eventos" class="nav-link">
+                                <i class="bi bi-calendar-check me-1"></i>
+                                Eventos
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#cardapio" class="nav-link">
+                                <i class="bi bi-card-text me-1"></i>
+                                Nosso cardápio
+                            </a>
+                        </li>
+                        <li class="nav-item fw-bold">
+                            <a href="#faleconosco" class="nav-link">
+                                <i class="bi bi-chat-left-text me-1"></i>
+                                Fale conosco
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<!--CORPO DA PÁGINA-->    
+    <!--CARROSSEL-->
+        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="sobre-o-restaurante">
+                <div class="carousel-slide" data-bs-ride="carousel" id="carrossel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100" src="imagens/cardápio/diapositivos/slide1.png" alt="Foto espaço interno do restaurante">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="imagens/cardápio/diapositivos/slide2.png" alt="Duas taças com vinho">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100" src="imagens/cardápio/diapositivos/slide3.png" alt="Uma mesa com variedade de refeições">
+                        </div>
+                    </div>
+    <!--BOTÕES-->                    
+                        <button type="button" class="carousel-control-prev"  data-bs-target="#carrossel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button type="button" class="carousel-control-next"  data-bs-target="#carrossel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>    
+    <!--INDICADORES-->  
+                    <div class="carousel-indicators">
+                        <button type="button" class="active" data-bs-target="#carrossel" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+    <!--SOBRE O RESTAURANTE-->
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img class="d-block w-100 rounded" src="imagens/cardápio/restaurante.jpg" alt="Foto do restaurante">
+                            </div>
+                            <div class="col-md-7">
+                                <h2 class="section-tittle">Sobre <span>WemyGastrô</span></h2>
+                                <p>WemyGastrô oferece uma experiência gastronômica de alta qualidade, combinando requinte culinário com um serviço excepcional. Nossa equipe dedicada garante que cada detalhe seja cuidadosamente planejado, proporcionando uma experiência única aos nossos clientes. Venha nos visitar e descubra a excelência em cada prato.</p>
+                                <h3 class="section-tittle">Sobre o <span>espaço</span></h3>
+                                <p>O ambiente luxuoso do WemyGastrô exala elegância e sofisticação em cada detalhe. De sua decoração meticulosamente planejada até seus móveis e utensílios de alta qualidade, cada elemento foi escolhido para criar uma atmosfera de refinamento. Nossos clientes desfrutam de uma experiência gastronômica incomparável em um ambiente que reflete nossa busca pela excelência.</p>
+                                <ul>
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                    <li>Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+    <!--EVENTOS-->    
+            <section id="eventos" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-tittle text-center">Para todas <span>as ocasiões</span></h2>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="imagens/cardápio/eventos/aniversario.jpg" alt="Bolo de aniversário" class="d-block w-100 rounded mb-2">
+                            <h3 class="section-tittle text-colored fs-4">
+                                <i class="bi bi-calendar-heart-fill"></i>
+                                Aniversários
+                            </h3>
+                            <p>Celebre momentos especiais no WemyGastrô! Nossos eventos de aniversário são cuidadosamente planejados para garantir que seu dia seja verdadeiramente inesquecível. Com um menu personalizado, serviço impecável e um ambiente luxuoso, estamos aqui para tornar seu aniversário memorável. Venha celebrar conosco e deixe-nos cuidar de todos os detalhes para você.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="imagens/cardápio/eventos/casamento.jpg" alt="Festa de casamento" class="d-block w-100 rounded mb-2">
+                            <h3 class="section-tittle text-colored fs-4">
+                                <i class="bi bi-arrow-through-heart-fill"></i>
+                                Casamentos
+                            </h3>
+                            <p>No WemyGastrô, transformamos seu sonho de casamento em realidade. Com um ambiente elegante e sofisticado, menu personalizado e serviço de alta qualidade, criamos a atmosfera perfeita para celebrar o amor. Dos detalhes da decoração à culinária excepcional, estamos aqui para tornar seu dia especial verdadeiramente inesquecível. Deixe-nos cuidar de cada detalhe enquanto você desfruta desse momento único ao lado de seus entes queridos.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="imagens/cardápio/eventos/confraternizacoes.jpg" alt="Evento de contraternização" class="d-block w-100 rounded mb-2">
+                            <h3 class="section-tittle text-colored fs-4">
+                                <i class="bi bi-people-fill"></i>
+                                Contraternizações
+                            </h3>
+                            <p>Planejando uma confraternização? O WemyGastrô é o local ideal para reunir colegas, amigos e familiares. Com um ambiente acolhedor e sofisticado, oferecemos um menu diversificado e delicioso, preparado com ingredientes frescos e de alta qualidade. Nossa equipe experiente garante que sua confraternização seja um sucesso, cuidando de todos os detalhes para que você possa relaxar e desfrutar da companhia de seus convidados.</p>
+                        </div>
+                    </div>
+                    
+                        
+                    
+                </div>
+            </section>
+    <!--CARDÁPIO-->
+            <section id="cardapio" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-tittle text-center mb-5">Nosso <span class="text-colored">Cardápio</span></h2>
+                    </div>
+                    <!--Menu-->
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bolder text-start text-colored nav-link active">Bebidas sem Álcool</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-com-alcool" class="fw-bolder text-start text-colored nav-link">Bebidas com Álcool</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bolder text-start text-colored nav-link">Appetizer</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bolder text-start text-colored nav-link">Pratos principais</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="fw-bolder text-start text-colored nav-link">Desserts</button>
+                            </nav>
+                        </aside>
+                        <!--Opções do Menu-->
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <!--Aba bebidas sem álcool-->
+                                <div class="tab-pane active" id="bebidas-sem-alcool">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/coca-cola.jpg" alt="Refrigerante coca-Cola">
+                                            <h5 class="text-colored fw-bold mt-2">Refrigerante</h5>
+                                            <p class="fw-bold">
+                                                Coca-Cola R$7,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/suco.jpg" alt="Suco de laranja">
+                                            <h5 class="text-colored fw-bold mt-2">Suco</h5>
+                                            <p class="fw-bold">
+                                                Suco de Laranja R$4,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/suco.jpg" alt="Suco de laranja">
+                                            <h5 class="text-colored fw-bold mt-2">Suco</h5>
+                                            <p class="fw-bold">
+                                                Suco de Laranja R$4,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/suco.jpg" alt="Suco de laranja">
+                                            <h5 class="text-colored fw-bold mt-2">Suco</h5>
+                                            <p class="fw-bold">
+                                                Suco de Laranja R$4,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/suco.jpg" alt="Suco de laranja">
+                                            <h5 class="text-colored fw-bold mt-2">Suco</h5>
+                                            <p class="fw-bold">
+                                                Suco de Laranja R$4,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/suco.jpg" alt="Suco de laranja">
+                                            <h5 class="text-colored fw-bold mt-2">Suco</h5>
+                                            <p class="fw-bold">
+                                                Suco de Laranja R$4,90 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Aba bebidas com álcool-->
+                                <div class="tab-pane" id="bebidas-com-alcool">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/cerveja.jpg" alt="Cerveja">
+                                            <h5 class="text-colored fw-bold mt-2">Cervejas</h5>
+                                            <p class="fw-bold">
+                                                Caneca Heineken R$10,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/bebidas/vinho.jpg" alt="Vinho">
+                                            <h5 class="text-colored fw-bold mt-2">Vinhos</h5>
+                                            <p class="fw-bold">
+                                                Taça de vinho R$12,90 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Aba entradas-->
+                                <div class="tab-pane" id="entradas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/entradas/entrada.jpg" alt="Entradas">
+                                            <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                            <p class="fw-bold">
+                                                Preço da entrada R$27,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/entradas/entrada.jpg" alt="Entradas">
+                                            <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                            <p class="fw-bold">
+                                                Preço da entrada R$27,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/entradas/entrada.jpg" alt="Entradas">
+                                            <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                            <p class="fw-bold">
+                                                Preço da entrada R$27,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/entradas/entrada.jpg" alt="Entradas">
+                                            <h5 class="text-colored fw-bold mt-2">Nome da entrada</h5>
+                                            <p class="fw-bold">
+                                                Preço da entrada R$27,90 
+                                            </p>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <!--Aba pratos principais-->
+                                <div class="tab-pane" id="pratos-principais">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/pratos/pizza.jpg" alt="Pizza">
+                                            <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                            <p class="fw-bold">
+                                                Pizza R$31,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/pratos/salmao.jpg" alt="Salmão">
+                                            <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                            <p class="fw-bold">
+                                                Salmão R$42,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/pratos/pizza.jpg" alt="Pizza">
+                                            <h5 class="text-colored fw-bold mt-2">Pizza</h5>
+                                            <p class="fw-bold">
+                                                Pizza R$31,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/pratos/salmao.jpg" alt="Salmão">
+                                            <h5 class="text-colored fw-bold mt-2">Salmão</h5>
+                                            <p class="fw-bold">
+                                                Salmão R$42,90 
+                                            </p>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                </div>
+                                <!--Aba sobremesas-->
+                                <div class="tab-pane" id="sobremesas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/sobremesas/bolo.jpg" alt="Bolo de chocolate">
+                                            <h5 class="text-colored fw-bold mt-2">Bolo de Chocolate</h5>
+                                            <p class="fw-bold">
+                                                Fatia do bolo R$12,90 
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-bloc w-100" src="imagens/cardápio/sobremesas/cupcake.jpg" alt="CupCake">
+                                            <h5 class="text-colored fw-bold mt-2">CupCake</h5>
+                                            <p class="fw-bold">
+                                                Preço do Cupcake R$15,90 
+                                            </p>
+                                        </div>                                   
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+        </div>
+    
+
+<!--framework BOOTSTRAP JS-->
+        <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    </body>
+</html>
