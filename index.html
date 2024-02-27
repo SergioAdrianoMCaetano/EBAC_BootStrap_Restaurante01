@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-<!--CABEÇALHO E BARRA DE NAVEGAÇÃO-->        
+<!--CABEÇALHO-->
+    <!--BARRA DE NAVEGAÇÃO-->        
         <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
             <div class="container">
                 <h1 class="navbar-brand m-0 section-tittle">WemyGastrô - A Alegria da Capital</h1>
@@ -41,7 +42,7 @@
                             </a>
                         </li>
                         <li class="nav-item fw-bold">
-                            <a href="#faleconosco" class="nav-link">
+                            <a href="#fale-conosco" class="nav-link">
                                 <i class="bi bi-chat-left-text me-1"></i>
                                 Fale conosco
                             </a>
@@ -52,9 +53,9 @@
         </header>
 <!--CORPO DA PÁGINA-->    
     <!--CARROSSEL-->
-        <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
             <section id="sobre-o-restaurante">
-                <div class="carousel-slide" data-bs-ride="carousel" id="carrossel">
+                <div class="carousel slide" data-bs-ride="carousel" id="carrossel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
                             <img class="d-block w-100" src="imagens/cardápio/diapositivos/slide1.png" alt="Foto espaço interno do restaurante">
@@ -87,7 +88,7 @@
                             <div class="col-md-5">
                                 <img class="d-block w-100 rounded" src="imagens/cardápio/restaurante.jpg" alt="Foto do restaurante">
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-7 mt-3 mt-md-0">
                                 <h2 class="section-tittle">Sobre <span>WemyGastrô</span></h2>
                                 <p>WemyGastrô oferece uma experiência gastronômica de alta qualidade, combinando requinte culinário com um serviço excepcional. Nossa equipe dedicada garante que cada detalhe seja cuidadosamente planejado, proporcionando uma experiência única aos nossos clientes. Venha nos visitar e descubra a excelência em cada prato.</p>
                                 <h3 class="section-tittle">Sobre o <span>espaço</span></h3>
@@ -149,7 +150,7 @@
                     <!--Menu-->
                     <div class="row">
                         <aside class="col-md-2">
-                            <nav class="nav nav-pills flex-column nav-cardapio">
+                            <nav class="nav nav-pills flex-column nav-cardapio fs-6">
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="fw-bolder text-start text-colored nav-link active">Bebidas sem Álcool</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-com-alcool" class="fw-bolder text-start text-colored nav-link">Bebidas com Álcool</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bolder text-start text-colored nav-link">Appetizer</button>
@@ -319,11 +320,91 @@
                         </div>
                     </div>
                 </div>
-            </section>        
-        </div>
-    
+            </section>    
+    <!--FALE CONOSCO-->
+            <section>
+                <div id="fale-conosco" class="pt-5 pb-5"> 
+                    <div class="container">
+                        <div class="row">
+                            <h2 class="section-tittle text-center mb-5"> Fale
+                                <span class="text-colored"> Conosco</span>
+                            </h2>
+                        </div>
+                        <!--Formulário-->
+                        <div class="row">
+                            <div class="col-md-7 mb-5">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                        <input type="text" id="nome" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                                        <input type="email" id="email" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="telefone" class="form-label fw-bold text-colored">Telefone (opcional)</label>
+                                        <input type="tel" id="telefone" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                        <textarea class="form-control" id="mensagem" required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-hover fw-bold">Enviar</button>
+                                </form>
+                            </div>
+                            <!--Redes Sociais e Endereço-->
+                            <div class="col-md-5">
+                                <!--redes sociais-->
+                                <div class="row">
+                                    <h3 class="section-tittle fs-3 text-colored">
+                                        <i class="bi bi-hand-thumbs-up-fill"></i>
+                                        Redes Sociais</h3>
+                                    <ul class="social-links">
+                                        <li class="fs-5">
+                                            <a href="#">
+                                                <i class="bi bi-facebook text-colored"></i>
+                                            </a>
+                                        </li>
+                                        <li class="fs-5 ms-1 me-1">
+                                            <a href="#">
+                                                <i class="bi bi-instagram text-colored"></i>
+                                            </a>
+                                        </li>
+                                        <li class="fs-5">
+                                            <a href="#">
+                                                <i class="bi bi-whatsapp text-colored"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!--endereço-->
+                                <div class="row mt-4">
+                                    <h3 class="section-tittle fs-3 text-colored"> 
+                                        <i class="bi bi-cursor-fill"></i>
+                                        Endereço</h3>
+                                        <p class="fs-6">
+                                            SQS 417 Bl. E Lj. 72, Brasília - DF
+                                        </p>
+                                </div>
+                            </div>
+                            <!--Endereço-->
 
-<!--framework BOOTSTRAP JS-->
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    <!--framework BOOTSTRAP JS-->
         <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
     </body>
+<!--RODAPÉ-->
+    <footer class="rodape py-3">
+        <div class="container">
+            <p class="section-tittle text-center m-0">
+                © 2024 WemyGastrô. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
 </html>
